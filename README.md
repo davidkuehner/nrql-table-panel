@@ -12,7 +12,7 @@ Show all selected attribute of the SELECT Nrql query :
 
 - **Display query**:
 
-  Activate or deactivate the display of the nrql query at the top of the table.
+  Activate or deactivate the display of the nrql query at the bottom of the table.
 
 - **timestamp pattern**:
 
