@@ -1,0 +1,32 @@
+<div class="table-panel-container" ng-show="ctrl.dataRaw.length!==0">
+  <div class="table-panel-header-bg"></div>
+  <div class="table-panel-scroll">
+    <table class="table-panel-table">
+      <thead>
+      <tr>
+        <th ng-repeat="propName in ctrl.getDataRawPropertiesNames()">
+          <div class="table-panel-table-header-inner pointer">
+            {{propName}}
+          </div>
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="event in ctrl.dataRaw">
+          <td ng-repeat="prop in event">{{ctrl.parseData(prop)}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="datapoints-warning" ng-show="ctrl.dataRaw.length===0">
+	<span class="small" ng-show="ctrl.isInsightsQueryType">
+		No data to show <tip>Nothing returned by data query</tip>
+	</span>
+    <span class="small" ng-show="!ctrl.isInsightsQueryType">
+		Wrong service type <tip>Insights service from NewRelic datasource is required</tip>
+	</span>
+</div>
+<div class="table-panel-footer nrql-table-panel-footer" ng-show="ctrl.panel.nrqlSettings.showNrqlQuery">
+    {{ctrl.nrqlQuery}}
+</div>

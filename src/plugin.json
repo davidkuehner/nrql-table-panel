@@ -1,0 +1,33 @@
+{
+  "type": "panel",
+  "name": "Nrql Table",
+  "id": "nrql-table-panel",
+
+  "info": {
+    "description": "Table panel for Nrql results of the NewRelic Insight datasource",
+    "author": {
+      "name": "David Kühner",
+      "url": "https://grafana.com"
+    },
+    "keywords": ["nrql", "panel", "table", "new-relic"],
+    "logos": {
+      "small": "img/nrql_panel_logo.svg",
+      "large": "img/nrql_panel_logo.svg"
+    },
+    "links": [
+      {"name": "Project site", "url": "https://github.com"},
+      {"name": "MIT License", "url": "https://github.com"}
+    ],
+    "screenshots": [
+      {"name": "Showcase", "path": "img/screenshot-showcase.png"},
+      {"name": "Options", "path": "img/screenshot-nrql-options.png"}
+    ],
+    "version": "0.0.1",
+    "updated": "2019-01-26"
+  },
+
+  "dependencies": {
+    "grafanaVersion": "5.x.x",
+    "plugins": [ ]
+  }
+}

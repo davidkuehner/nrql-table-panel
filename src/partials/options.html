@@ -1,0 +1,10 @@
+<div class="editor-row">
+	<div class="section gf-form-group">
+		<h5 class="section-heading">Display options</h5>
+		<gf-form-switch class="gf-form" label="Show nrql query" label-class="width-8" checked="ctrl.panel.nrqlSettings.showNrqlQuery" on-change="ctrl.render()"></gf-form-switch>
+		<div class="gf-form">
+			<label class="gf-form-label width-8">Format</label>
+			<input type="text" class="input-medium gf-form-input max-width-10" ng-model="ctrl.panel.nrqlSettings.timestampFormat" ng-change="ctrl.render()" ng-model-onblur>
+		</div>
+	</div>
+</div>
