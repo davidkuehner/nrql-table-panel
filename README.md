@@ -2,7 +2,9 @@
 
 Table panel for Nrql results of the NewRelic Insight datasource
 
-Show all selected attribute of the SELECT Nrql query
+Show all selected attribute of the SELECT Nrql query :
+
+![plugin-showcase](./src/img/screenshot-showcase.png)
 
 ### Plugin options
 
