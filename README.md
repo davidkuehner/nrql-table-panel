@@ -20,7 +20,7 @@ Show all selected attribute of the SELECT Nrql query :
 
 - **URL as link**:
 
-  Display the URLs as a link with the `link text as label.
+  Display the URLs as a link with the `link text` as label.
 
 - **Link text**:
 
