@@ -16,7 +16,15 @@ Show all selected attribute of the SELECT Nrql query :
 
 - **timestamp pattern**:
 
-  Customise the timestamp format
+  Customise the timestamp format.
+
+- **URL as link**:
+
+  Display the URLs as a link with the `link text as label.
+
+- **Link text**:
+
+  Text used as label for the URL's links.
 
 ### Development
 

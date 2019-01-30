@@ -13,7 +13,9 @@
       </thead>
       <tbody>
         <tr ng-repeat="event in ctrl.dataRaw">
-          <td ng-repeat="prop in event">{{ctrl.parseData(prop)}}</td>
+          <td ng-repeat="prop in event">
+            <ANY ng-bind-html="ctrl.parseData(prop)"></ANY>
+          </td>
         </tr>
       </tbody>
     </table>

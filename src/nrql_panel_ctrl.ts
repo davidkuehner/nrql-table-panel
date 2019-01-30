@@ -10,6 +10,8 @@ export class NrqlPanelCtrl extends MetricsPanelCtrl {
     nrqlSettings: {
       timestampFormat: 'DD-MM-YY HH:mm',
       showNrqlQuery: false,
+      convertUrlToLink: true,
+      linkText: 'open link'
     }
   };
 
@@ -66,10 +68,12 @@ export class NrqlPanelCtrl extends MetricsPanelCtrl {
     if(!data || data === "") {
       return "------";
     }
-    if( moment.unix(data/1000).isValid()) {
+    if(moment.unix(data/1000).isValid()) {
       return moment.unix(data/1000).format(this.panel.nrqlSettings.timestampFormat);
     }
-    // todo check if url and generate <a>
+    if(this.panel.nrqlSettings.convertUrlToLink && data.startsWith("http")) {
+      return `<a href='${data}' target='_blank'>${this.panel.nrqlSettings.linkText}</a>`;
+    }
     return data;
   }
 

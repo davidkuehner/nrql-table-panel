@@ -6,5 +6,10 @@
 			<label class="gf-form-label width-8">Format</label>
 			<input type="text" class="input-medium gf-form-input max-width-10" ng-model="ctrl.panel.nrqlSettings.timestampFormat" ng-change="ctrl.render()" ng-model-onblur>
 		</div>
+		<gf-form-switch class="gf-form" label="Convert url to link" label-class="width-8" checked="ctrl.panel.nrqlSettings.convertUrlToLink" on-change="ctrl.render()"></gf-form-switch>
+		<div class="gf-form">
+			<label class="gf-form-label width-8">Link text</label>
+			<input type="text" class="input-medium gf-form-input max-width-10" ng-model="ctrl.panel.nrqlSettings.linkText" ng-change="ctrl.render()" ng-model-onblur>
+		</div>
 	</div>
 </div>
